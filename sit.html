@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Cairo", sans-serif;
+            background: #f2f2f2;
+        }
+
+        /* NAV */
+        nav {
+            background: black;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav h2 {
+            color: #c59d5f;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* HERO SLIDER */
+        .hero {
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+            animation: slide 15s infinite;
+        }
+
+        @keyframes slide {
+            0% { background-image: url('https://us1.discourse-cdn.com/flex002/uploads/slicer/optimized/3X/9/2/921ebe55412a0dddda5037675e52d62e70246f74_2_1024x547.png'); }
+            33% { background-image: url('https://us1.discourse-cdn.com/flex002/uploads/slicer/optimized/3X/9/2/921ebe55412a0dddda5037675e52d62e70246f74_2_1024x547.png'); }
+            66% { background-image: url('https://us1.discourse-cdn.com/flex002/uploads/slicer/optimized/3X/9/2/921ebe55412a0dddda5037675e52d62e70246f74_2_1024x547.png'); } */
+            100% { background-image: url('https://us1.discourse-cdn.com/flex002/uploads/slicer/optimized/3X/9/2/921ebe55412a0dddda5037675e52d62e70246f74_2_1024x547.png'); } */
+        }
+
+        .hero-text {
+            color: white;
+            text-align: center;
+            padding-top: 25vh;
+            font-size: 50px;
+            text-shadow: 0 0 15px black;
+        }
+
+        /* PRODUCTS */
+        .products-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 22px;
+        }
+
+        .price {
+            color: #c59d5f;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px auto 20px;
+            width: 80%;
+            padding: 12px;
+            background: #c59d5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: black;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <h2>OrIgInaL pArFuM</h2>
+        <div>
+            <a href="#">.</a>
+            <a href="#">.</a>
+            <a href="#">.</a>
+        </div>
+    </nav>
+
+    <!-- HERO SLIDER -->
+    <div class="hero">
+        <div class="hero-text">OrIgInaL pArFuM</div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products-section">
+        <!-- <h2 style="font-size:32px; margin-bottom:20px;">kipooo lputaaaaaa</h2> -->
+
+        <div class="products">
+
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://marionnaud.ma/cdn/shop/files/GA_2024_EA-SWY-EDT-Intensely_SL_Digital_4x5_RVB_1080x.png?v=1709896668" alt="">
+                <h3>strong with you intesly</h3>
+                <p class="price">350 dh</p>
+                <a class="btn" href="https://wa.me/212689490180" target="_blank">commnder sur whatsApp</a>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="card">
+                <img src="https://twinfragrance.shop/cdn/shop/files/5BFE8837-D9B7-40D6-B9B3-4229D63909DD.png?v=1759527824" alt="">
+                <h3>le male elixir</h3>
+                <p class="price">350 dh</p>
+                <a class="btn" href="https://wa.me/212689490180" target="_blank">commnder sur whatsApp</a>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/1b/b3/f3/1bb3f335f977de64434304f77fd12e53.jpg" alt="">
+                <h3>le male le parfum</h3>
+                <p class="price">350 dh</p>
+                <a class="btn" href="https://wa.me/212689490180" target="_blank">commnder sur whatsApp</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2025 OrIgInaL pArFuM  
+    </footer>
+
+</body>
+</html>
